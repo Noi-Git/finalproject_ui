@@ -53,6 +53,10 @@
     align-items: flex-start; //start position on the top
     background-color: $color-primary;
 
+    @include respond(tab-port) {
+      border-bottom: 0.3px solid #e94514;
+    }
+
     @include respond(tab-land) {
       font-size: 1.8rem;
       margin-top: -2rem;
