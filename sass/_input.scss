@@ -1,18 +1,52 @@
 /* === INPUT === */
 .input {
   color: $color-white;
-  margin: 0 1rem;
+  width: 90%;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 70%;
+  }
+
+  @include respond(desktop) {
+    width: 50%;
+  }
 
   &__title {
     font-size: 1.7rem;
     text-align: center;
-    padding-top: -2rem;
+    padding-bottom: 3rem;
+
+    @include respond(tab-port) {
+      font-size: 1.9rem;
+    }
+
+    @include respond(tab-land) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(desktop) {
+      font-size: 2.5rem;
+    }
   }
 }
 
-.input__detail {
+.input__detail label {
   &--name {
-    padding: 2rem 0;
+    font-size: 1.4rem;
+    padding: 2rem 0 2.6rem 0;
+
+    @include respond(tab-port) {
+      padding: 4rem 0 2.6rem 0;
+    }
+
+    @include respond(tab-land) {
+      font-size: 1.7rem;
+    }
+
+    @include respond(desktop) {
+      padding: 4rem 0 2.6rem 0;
+    }
   }
 }
 
@@ -22,13 +56,26 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 
-  margin: 0 1rem;
+  width: 94%;
+  margin: 0 auto;
   padding: 2rem 0;
   box-shadow: 1px 1px 2px $color-shadow;
   border-radius: 0.5rem;
 
+  @include respond(tab-port) {
+    width: 76%;
+  }
+
+  @include respond(tab-land) {
+    width: 70%;
+  }
+
+  @include respond(desktop) {
+    width: 60%;
+  }
+
   &__title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     text-align: center;
     margin-top: -1.5rem;
     // padding: 1rem 0;
@@ -41,6 +88,7 @@
   }
 
   &__details {
+    font-size: 1.4rem;
     padding: 1rem 0.7rem;
 
     display: flex;

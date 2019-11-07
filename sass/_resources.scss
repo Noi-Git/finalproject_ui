@@ -21,7 +21,7 @@
   }
 
   @include respond(desktop) {
-    margin-top: 9rem;
+    margin-top: 5rem;
   }
 
   &__link {
@@ -47,7 +47,7 @@
     }
 
     @include respond(desktop) {
-      height: 30rem;
+      height: 28rem;
     }
 
     &--1 {

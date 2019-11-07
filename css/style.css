@@ -124,17 +124,21 @@ body {
   @media (min-width: 37.5em) {
     .nav__navbar {
       font-size: 1.5rem; } }
+  @media (min-width: 56.25em) {
+    .nav__navbar {
+      font-size: 1.7rem;
+      padding-top: 3rem; } }
 
 .budget {
   text-align: center; }
   .budget__dollar {
     font-size: 3rem;
     color: #f5f5f5;
-    text-shadow: 2px 2px 6px #575454; }
+    text-shadow: 2px 2px 6px #adadad; }
   .budget__amount {
     font-size: 8rem;
     color: #f5f5f5;
-    text-shadow: 2px 2px 6px #575454; }
+    text-shadow: 2px 2px 6px #adadad; }
   .budget__description {
     font-size: 1.4rem;
     font-weight: bold; }
@@ -151,7 +155,7 @@ body {
   width: 94%;
   margin: 0 auto;
   padding: 2rem 0;
-  box-shadow: 1px 1px 2px #575454;
+  box-shadow: 1px 1px 2px #adadad;
   border-radius: 0.5rem; }
   @media (min-width: 37.5em) {
     .main__balance {
@@ -178,13 +182,13 @@ body {
     font-weight: bold; }
     @media (min-width: 56.25em) {
       .main__balance--number {
-        font-size: 2rem; } }
+        font-size: 2.2rem; } }
   .main__balance--text {
     font-size: 1.2rem;
     text-align: center; }
     @media (min-width: 56.25em) {
       .main__balance--text {
-        font-size: 1.6rem; } }
+        font-size: 1.7rem; } }
   .main__balance--total {
     padding-top: 2rem;
     border-top: 1px solid #e6e5e5;
@@ -222,13 +226,13 @@ body {
       width: 78%; } }
   @media (min-width: 75em) {
     .resource {
-      margin-top: 9rem; } }
+      margin-top: 5rem; } }
   .resource__link {
     width: 28%;
     height: 12rem;
     border-radius: 0.5rem;
     font-size: 1.1rem;
-    box-shadow: 1px 1px 2px #575454;
+    box-shadow: 1px 1px 2px #adadad;
     display: flex;
     align-items: flex-end;
     justify-content: center; }
@@ -243,7 +247,7 @@ body {
         font-size: 1.7rem; } }
     @media (min-width: 75em) {
       .resource__link {
-        height: 30rem; } }
+        height: 28rem; } }
     .resource__link--1 {
       background-image: url(../img/recipies.svg);
       background-repeat: no-repeat;
@@ -308,7 +312,7 @@ select {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 0.5 solid #575454; }
+  border-bottom: 0.5 solid #adadad; }
 
 .input--button {
   padding-top: 2rem;
@@ -333,26 +337,62 @@ input[type='submit']:hover {
 /* === INPUT === */
 .input {
   color: #f5f5f5;
-  margin: 0 1rem; }
+  width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 37.5em) {
+    .input {
+      width: 70%; } }
+  @media (min-width: 75em) {
+    .input {
+      width: 50%; } }
   .input__title {
     font-size: 1.7rem;
     text-align: center;
-    padding-top: -2rem; }
+    padding-bottom: 3rem; }
+    @media (min-width: 37.5em) {
+      .input__title {
+        font-size: 1.9rem; } }
+    @media (min-width: 56.25em) {
+      .input__title {
+        font-size: 2.2rem; } }
+    @media (min-width: 75em) {
+      .input__title {
+        font-size: 2.5rem; } }
 
-.input__detail--name {
-  padding: 2rem 0; }
+.input__detail label--name {
+  font-size: 1.4rem;
+  padding: 2rem 0 2.6rem 0; }
+  @media (min-width: 37.5em) {
+    .input__detail label--name {
+      padding: 4rem 0 2.6rem 0; } }
+  @media (min-width: 56.25em) {
+    .input__detail label--name {
+      font-size: 1.7rem; } }
+  @media (min-width: 75em) {
+    .input__detail label--name {
+      padding: 4rem 0 2.6rem 0; } }
 
 /* === SUMMERY === */
 .summery {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin: 0 1rem;
+  width: 94%;
+  margin: 0 auto;
   padding: 2rem 0;
-  box-shadow: 1px 1px 2px #575454;
+  box-shadow: 1px 1px 2px #adadad;
   border-radius: 0.5rem; }
+  @media (min-width: 37.5em) {
+    .summery {
+      width: 76%; } }
+  @media (min-width: 56.25em) {
+    .summery {
+      width: 70%; } }
+  @media (min-width: 75em) {
+    .summery {
+      width: 60%; } }
   .summery__title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     text-align: center;
     margin-top: -1.5rem;
     padding-top: -2rem;
@@ -361,6 +401,7 @@ input[type='submit']:hover {
     width: 94%;
     margin: 0 auto; }
   .summery__details {
+    font-size: 1.4rem;
     padding: 1rem 0.7rem;
     display: flex;
     justify-content: space-between; }
