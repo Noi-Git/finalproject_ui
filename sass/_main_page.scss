@@ -24,22 +24,38 @@
 }
 
 .nav {
+  font-size: 1.2rem;
+  color: $color-white;
+
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+  }
+
+  @include respond(tab-land) {
+    font-size: 1.7rem;
+    padding-top: 3rem;
+  }
+
   &__navbar {
-    font-size: 1.2rem;
-    color: $color-white;
+    display: flex;
+    justify-content: space-around; //seperate day and date
+    align-items: flex-start; //start position on the top
+    padding-top: 1rem;
+  }
+
+  &__info {
+    font-size: 1.6rem;
     padding-top: 1.6rem;
+    padding-bottom: 1rem;
 
     display: flex;
     justify-content: space-around; //seperate day and date
     align-items: flex-start; //start position on the top
-
-    @include respond(tab-port) {
-      font-size: 1.5rem;
-    }
+    background-color: $color-primary;
 
     @include respond(tab-land) {
-      font-size: 1.7rem;
-      padding-top: 3rem;
+      font-size: 1.8rem;
+      margin-top: -2rem;
     }
   }
 }
