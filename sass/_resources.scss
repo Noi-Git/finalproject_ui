@@ -1,40 +1,89 @@
 /* === RESOURCES === */
+.main__resources {
+  padding: 2rem 0;
+}
 .resource {
-  margin-top: 5rem;
+  margin: 1.7rem auto;
+  width: 100%;
+
   display: flex;
   justify-content: space-around;
   align-content: center;
 
+  @include respond(tab-port) {
+    margin: 5rem auto 5rem auto;
+    width: 86%;
+  }
+
+  @include respond(tab-land) {
+    margin: 8rem auto 8rem auto;
+    width: 78%;
+  }
+
+  @include respond(desktop) {
+    margin-top: 9rem;
+  }
+
   &__link {
     width: 28%;
     height: 12rem;
-    // border: 1px solid $color-primary;
     border-radius: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     box-shadow: 1px 1px 2px $color-shadow;
 
     display: flex;
     align-items: flex-end;
     justify-content: center;
 
+    @include respond(tab-port) {
+      height: 22rem;
+      font-size: 1.5rem;
+      padding-bottom: 2rem;
+    }
+
+    @include respond(tab-land) {
+      height: 25rem;
+      font-size: 1.7rem;
+    }
+
+    @include respond(desktop) {
+      height: 30rem;
+    }
+
     &--1 {
       background-image: url(../img/recipies.svg);
       background-repeat: no-repeat;
       background-size: 80%;
       background-position: center;
+
+      @include respond(tab-port) {
+        background-size: 70%;
+      }
+
+      @include respond(desktop) {
+        background-size: 60%;
+      }
     }
 
     &--2 {
       background-image: url(../img/ingredients.svg);
       background-repeat: no-repeat;
-      background-size: 70%;
+      background-size: 60%;
       background-position: center;
+
+      @include respond(tab-port) {
+        background-size: 48%;
+      }
+
+      @include respond(desktop) {
+        background-size: 50%;
+      }
     }
 
     &--3 {
       background-image: url(../img/job.svg);
       background-repeat: no-repeat;
-      background-size: 50%;
+      background-size: 35%;
       background-position: center;
     }
   }
