@@ -1,0 +1,74 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+}
+
+.header {
+  display: grid;
+  height: 100vh;
+  align-content: center;
+  text-align: center;
+  color: $color-white;
+
+  background-image: linear-gradient(
+      rgba($color-yellow, 0.8),
+      rgba($color-primary, 1)
+    ),
+    url(../img/city.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  &__title {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+
+    @include respond(tab-port) {
+      font-size: 7rem;
+      padding-bottom: 8rem;
+    }
+
+    @include respond(tab-land) {
+      font-size: 8rem;
+      padding-bottom: 6rem;
+    }
+
+    @include respond(desktop) {
+      font-size: 8rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__tag-line {
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding-bottom: 8rem;
+    margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+      padding-bottom: 8rem;
+    }
+
+    @include respond(tab-land) {
+      font-size: 2.2rem;
+      padding-bottom: 10rem;
+    }
+
+    @include respond(desktop) {
+      font-size: 2.5rem;
+      padding-bottom: 12rem;
+    }
+  }
+
+  &__info {
+    padding-top: 6rem;
+
+    &--icon {
+      padding-top: 2rem;
+    }
+  }
+}

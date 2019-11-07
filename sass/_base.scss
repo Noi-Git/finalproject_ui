@@ -1,0 +1,75 @@
+$color-primary: #ff5722;
+$color-light-blue: rgba(#00b7ff, 0.45);
+$color-yellow: #fb8c00;
+$color-dark-pink: #d74177;
+$color-light-green: #a9f1df;
+$color-text: #555;
+$color-white: #f5f5f5;
+
+$color-shadow: #575454;
+
+$button-dark-green: #117a65;
+$button-light-green: #16a085;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-text;
+  padding: 3 rem;
+
+  box-sizing: border-box;
+}
+
+/* === MIDIA QUERY WITH MIX-IN === */
+/*
+  0 - 600px:      phone
+  600 - 900px:    tablet portrait
+  900 -1200px:    tablet landscape
+  1200 - 1800px:  most desktop screen
+  1800+           big-desktop
+
+  ==== break point arguement choices ====
+  - phone
+  - tab-port
+  - tab-land
+  - tab-desktop
+
+  1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media (min-width: 37.5em) {
+      @content;
+    } // 600 - our base layout
+  }
+  @if $breakpoint == tab-land {
+    @media (min-width: 56.25em) {
+      @content;
+    } // 900
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 75em) {
+      @content;
+    } // 1200
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    } // 1200+
+  }
+}

@@ -1,0 +1,41 @@
+/* === RESOURCES === */
+.resource {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+
+  &__link {
+    width: 28%;
+    height: 12rem;
+    // border: 1px solid $color-primary;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    box-shadow: 1px 1px 2px $color-shadow;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    &--1 {
+      background-image: url(../img/recipies.svg);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: center;
+    }
+
+    &--2 {
+      background-image: url(../img/ingredients.svg);
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: center;
+    }
+
+    &--3 {
+      background-image: url(../img/job.svg);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+    }
+  }
+}

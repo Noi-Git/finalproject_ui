@@ -1,0 +1,53 @@
+/* === INPUT === */
+.input {
+  color: $color-white;
+  margin: 0 1rem;
+
+  &__title {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: -2rem;
+  }
+}
+
+.input__detail {
+  &--name {
+    padding: 2rem 0;
+  }
+}
+
+/* === SUMMERY === */
+.summery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  margin: 0 1rem;
+  padding: 2rem 0;
+  box-shadow: 1px 1px 2px $color-shadow;
+  border-radius: 0.5rem;
+
+  &__title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: -1.5rem;
+    // padding: 1rem 0;
+
+    padding-top: -2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgb(230, 229, 229);
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  &__details {
+    padding: 1rem 0.7rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__total {
+    font-weight: bold;
+  }
+}

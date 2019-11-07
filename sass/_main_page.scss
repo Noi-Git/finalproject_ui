@@ -1,0 +1,106 @@
+/* === MAIN PAGE === */
+
+.main__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12vh;
+  margin: 0 auto;
+  padding-bottom: 6rem; //control space between budget and balance
+
+  background-image: linear-gradient(
+    rgba($color-primary, 1),
+    rgba($color-yellow, 0.8),
+    rgba(#fff, 0.5)
+  );
+}
+
+.nav {
+  &__navbar {
+    font-size: 1.2rem;
+    color: $color-white;
+    padding-top: 1.6rem;
+
+    display: flex;
+    justify-content: space-around; //seperate day and date
+    align-items: flex-start; //start position on the top
+  }
+}
+
+.budget {
+  text-align: center;
+
+  &__dollar {
+    font-size: 3rem;
+    color: $color-white;
+    text-shadow: 2px 2px 6px $color-shadow;
+  }
+
+  &__amount {
+    font-size: 8rem;
+    color: $color-white;
+    text-shadow: 2px 2px 6px $color-shadow;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
+
+.response {
+  &__button {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.main__balance {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  margin: 0 1rem;
+  padding: 2rem 0;
+  box-shadow: 1px 1px 2px $color-shadow;
+  border-radius: 0.5rem;
+
+  &--title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: -1.5rem;
+    padding: 1rem 0;
+  }
+
+  &--number {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &--text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  &--total {
+    padding-top: 2rem;
+    border-top: 1px solid rgb(230, 229, 229);
+    width: 94%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &--add {
+    padding-top: 0.8rem;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &--add img {
+    width: 1.8rem;
+  }
+}
